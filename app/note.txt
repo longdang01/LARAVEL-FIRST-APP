@@ -1,0 +1,38 @@
+php artisan make:model BillExport
+php artisan make:controller BillExportController --model=BillExport --resource
+
+php artisan make:model BillImport
+php artisan make:controller BillImportController --model=BillImport --resource
+
+php artisan make:model BillDetailExport
+php artisan make:controller BillDetailExportController --model=BillDetailExport --resource
+
+php artisan make:model BillDetailImport
+php artisan make:controller BillDetailImportController --model=BillDetailImport --resource
+
+php artisan make:model Customer
+php artisan make:controller CustomerController --model=Customer --resource
+
+php artisan make:model Store
+php artisan make:controller StoreController --model=Store --resource
+
+php artisan make:model Migration
+php artisan make:controller MigrationController --model=Migration --resource
+
+php artisan make:model News
+php artisan make:controller NewsController --model=News --resource
+
+php artisan make:model Staff
+php artisan make:controller StaffController --model=Staff --resource
+
+php artisan make:model Feedback
+php artisan make:controller FeedbackController --model=Feedback --resource
+
+php artisan make:model Ads
+php artisan make:controller AdsController --model=Ads --resource
+
+php artisan make:model Slide
+php artisan make:controller SlideController --model=Slide --resource
+
+php artisan make:model Account
+php artisan make:controller AccountController --model=Account --resource
