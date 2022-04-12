@@ -7,7 +7,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>AngularJs</title>
-        
+
         <link href="/assets/admin/dist/libs/fontawesome/css/all.min.css">
         <link href="/assets/admin/dist/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
         <link href="/assets/admin/dist/css/styles.css" rel="stylesheet" />
@@ -40,6 +40,6 @@
         <script src="/assets/admin/dist/libs/angularjs/angularjs.min.js"></script>
         <script src="/assets/admin/dist/js/app.js"></script>
     
-        <script src="/assets/admin/dist/controllers/mycontroller.js"></script>
+        <script src="/assets/admin/dist/controllers/MyController.js"></script>
     </body>
 </html>

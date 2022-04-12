@@ -22,11 +22,7 @@
                         <div class="form-group">
                             <label>Category</label>
                             <select name="category" id="category" class="form-select">
-                                @foreach($categories as $item)
-                                    <option value="{{$item->id}}">
-                                        {{$item->tenloai}}
-                                    </option>
-                                @endforeach
+                                
                             </select>
                         </div>
                         <div class="form-group">

@@ -12,14 +12,12 @@ use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\MigrationController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProductController;
-use App\Http\Controllers\api\ApiProductController;
 use App\Http\Controllers\SlideController;
 use App\Http\Controllers\StaffController;
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\SupplierController;
 
 use Illuminate\Support\Facades\Route;
-use Spatie\FlareClient\Api;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,11 +41,20 @@ Route::post('/admin/product/create',[ProductController::class, 'create']);
 Route::post('/admin/product/update',[ProductController::class, 'update']);
 Route::get('/admin/product/{id}/delete',[ProductController::class, 'delete']);
 
-Route::get('/admin/products', function() {
-    return view('admin.product');
-});
-Route::resource('products', ApiProductController::class);
+/** =======Route: API======== */
+Route::get('/admin/products', function() { return view('admin.product.product'); });
+Route::get('/admin/categories', function() { return view('admin.category.category'); });
+Route::get('/admin/suppliers', function() { return view('admin.supplier.supplier'); });
+Route::get('/admin/migrations', function() { return view('admin.migration.migration'); });
 
+Route::get('/admin/newss', function() { return view('admin.news.news'); });
+Route::get('/admin/staffs', function() { return view('admin.staff.staff'); });
+Route::get('/admin/accounts', function() { return view('admin.account.account'); });
+
+Route::get('/admin/adss', function() { return view('admin.ads.ads'); });
+Route::get('/admin/customers', function() { return view('admin.customer.customer'); });
+Route::get('/admin/slides', function() { return view('admin.slide.slide'); });
+/** ========================== */
 
 //Category
 Route::get('/admin/category',[CategoryController::class, 'index']);

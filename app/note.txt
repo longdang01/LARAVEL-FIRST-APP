@@ -36,3 +36,21 @@ php artisan make:controller SlideController --model=Slide --resource
 
 php artisan make:model Account
 php artisan make:controller AccountController --model=Account --resource
+
+//API
+php artisan make:controller api/ApiCategoryController --resource
+php artisan make:controller api/ApiSupplierController --resource
+php artisan make:controller api/ApiMigrationController --resource
+php artisan make:controller api/ApiNewsController --resource
+php artisan make:controller api/ApiStaffController --resource
+php artisan make:controller api/ApiAccountController --resource
+php artisan make:controller api/ApiAdsController --resource
+php artisan make:controller api/ApiCustomerController --resource
+php artisan make:controller api/ApiSlideController --resource
+php artisan make:controller api/ApiBillExportController --resource
+php artisan make:controller api/ApiBillExportDetailController --resource
+php artisan make:controller api/ApiBillImportController --resource
+php artisan make:controller api/ApiBillImportDetailController --resource
+php artisan make:controller api/ApiStoreController --resource
+php artisan make:controller api/ApiFeedbackController --resource
+
